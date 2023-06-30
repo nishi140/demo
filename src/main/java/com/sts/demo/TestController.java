@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class TestController {
 	
 	@RequestMapping("/test")
-	@ResponseBody
+    @ResponseBody
 	public String handleRequest() {
-		return "This is using sts";
+		int a =10;
+		int b=20;
+		return "This is jus test"+ (b-a);
 	}
 	
 	
